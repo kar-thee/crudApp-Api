@@ -26,5 +26,5 @@ app.use('/users',homeRoute)
 
 
 
-const port = process.env.PORTS || 3002;
+const port = process.env.PORT || 3002;
 app.listen(port,()=>console.log("Connected @ ",port));
