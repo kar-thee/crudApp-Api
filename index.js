@@ -20,7 +20,7 @@ app.use((req,res,next)=>{
 })
 
 //api call middleware
-
+app.get('/',(req,res)=>res.send("Hi");
 app.use('/users',homeRoute)
 
 
