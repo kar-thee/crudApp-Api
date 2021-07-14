@@ -1,7 +1,7 @@
 const express = require("express")
 const app = express();
 require("dotenv").config();
-
+require("cors");
 
 //includefiles
 const homeRoute = require('./routes/home.route')
@@ -9,6 +9,7 @@ const homeRoute = require('./routes/home.route')
 
 
 //middlewares 
+app.use(cors());
 
 //1 = parse load from request
 app.use(express.json())
